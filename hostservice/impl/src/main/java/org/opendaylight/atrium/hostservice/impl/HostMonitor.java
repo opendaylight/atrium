@@ -34,7 +34,7 @@ import org.opendaylight.controller.md.sal.binding.api.DataBroker;
 import org.opendaylight.controller.md.sal.binding.api.DataChangeListener;
 import org.opendaylight.controller.md.sal.binding.api.ReadOnlyTransaction;
 import org.opendaylight.controller.md.sal.common.api.data.LogicalDatastoreType;
-import org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv4Address;
+import org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715.Ipv4Address;
 import org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.NodeId;
 import org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.Nodes;
 import org.opendaylight.yang.gen.v1.urn.opendaylight.inventory.rev130819.node.NodeConnector;
@@ -184,7 +184,7 @@ public class HostMonitor implements TimerTask {
 		List<BgpSpeaker> speakers = configService.getBgpSpeakers().getBgpSpeaker();
 
 		for (BgpSpeaker bgpSpeaker : speakers) {
-			org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.yang.types.rev100924.MacAddress mac = bgpSpeaker
+			org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.yang.types.rev130715.MacAddress mac = bgpSpeaker
 					.getMacAddress();
 
 			List<InterfaceAddresses> addresses = bgpSpeaker.getInterfaceAddresses();
@@ -277,9 +277,9 @@ public class HostMonitor implements TimerTask {
 	private void addHost(ConnectorAddress address, NodeConnector nodeConnector) {
 		checkNotNull(address);
 		checkNotNull(nodeConnector);
-		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv4Address ipv4Address = address
+		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715.Ipv4Address ipv4Address = address
 				.getIp().getIpv4Address();
-		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv6Address ipv6Address = address
+		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715.Ipv6Address ipv6Address = address
 				.getIp().getIpv6Address();
 		HostId hostId = null;
 		if (ipv4Address != null) {
@@ -305,9 +305,9 @@ public class HostMonitor implements TimerTask {
 	private void addHost(ConnectorAddress address, Host host) {
 		checkNotNull(address);
 		checkNotNull(host);
-		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv4Address ipv4Address = address
+		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715.Ipv4Address ipv4Address = address
 				.getIp().getIpv4Address();
-		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv6Address ipv6Address = address
+		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715.Ipv6Address ipv6Address = address
 				.getIp().getIpv6Address();
 		HostId hostId = null;
 		if (ipv4Address != null) {
@@ -331,9 +331,9 @@ public class HostMonitor implements TimerTask {
 
 	private void deleteHost(ConnectorAddress address) {
 		checkNotNull(address);
-		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv4Address ipv4Address = address
+		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715.Ipv4Address ipv4Address = address
 				.getIp().getIpv4Address();
-		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev100924.Ipv6Address ipv6Address = address
+		org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.inet.types.rev130715.Ipv6Address ipv6Address = address
 				.getIp().getIpv6Address();
 		HostId hostId = null;
 		if (ipv4Address != null) {
