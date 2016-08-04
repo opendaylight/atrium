@@ -37,11 +37,11 @@
 		<feature version="${openflowplugin.version}">odl-openflowplugin-flow-services</feature>
 		<feature version="${l2switch.version}">odl-l2switch-packethandler</feature>
 
-		<bundle>mvn:com.fasterxml.jackson.core/jackson-core/${jackson.version}
+		<bundle>mvn:com.fasterxml.jackson.core/jackson-core/{{VERSION}}
 		</bundle>
-		<bundle>mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.version}
+		<bundle>mvn:com.fasterxml.jackson.core/jackson-databind/{{VERSION}}
 		</bundle>
-		<bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/${jackson.version}
+		<bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/{{VERSION}}
 		</bundle>
 		<bundle>mvn:org.opendaylight.controller.model/model-inventory/${mdsal.version}
 		</bundle>
