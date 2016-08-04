@@ -32,7 +32,6 @@
 		<snmp.version>1.2.0-SNAPSHOT</snmp.version>
 		<didm.version>0.3.0-SNAPSHOT</didm.version>
 		<bgpcep.version>0.6.0-SNAPSHOT</bgpcep.version>
-		<jackson.version>2.7.4</jackson.version>
 	</properties>
 
 	<dependencyManagement>
@@ -250,7 +249,6 @@
 		<dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
 	</dependencies>
 </project>
