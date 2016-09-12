@@ -8,32 +8,32 @@
 	<parent>
 		<groupId>org.opendaylight.controller</groupId>
 		<artifactId>config-parent</artifactId>
-		<version>0.5.0-SNAPSHOT</version>
+		<version>0.5.0-Boron</version>
 		<relativePath />
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opendaylight.atrium</groupId>
 	<artifactId>config-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-Boron</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<atrium.version>0.0.1-SNAPSHOT</atrium.version>
-		<ietf.topology.version>2013.10.21.9-SNAPSHOT</ietf.topology.version>
-		<ietf.inet.types.version>1.1.0-SNAPSHOT</ietf.inet.types.version>
-		<ietf.yang.types.version>2013.07.15.9-SNAPSHOT</ietf.yang.types.version>
-		<ietf.interfaces.version>2014.05.08.9-SNAPSHOT</ietf.interfaces.version>
-		<iana.if.type.version>2014.05.08.9-SNAPSHOT</iana.if.type.version>
-		<yang.ext.version>2013.09.07.9-SNAPSHOT</yang.ext.version>
-		<openflowplugin.version>0.3.0-SNAPSHOT</openflowplugin.version>
-		<l2switch.version>0.4.0-SNAPSHOT</l2switch.version>
+		<atrium.version>0.0.1-Boron</atrium.version>
+		<ietf.topology.version>2013.10.21.9-Boron</ietf.topology.version>
+		<ietf.inet.types.version>1.1.0-Boron</ietf.inet.types.version>
+		<ietf.yang.types.version>2013.07.15.9-Boron</ietf.yang.types.version>
+		<ietf.interfaces.version>2014.05.08.9-Boron</ietf.interfaces.version>
+		<iana.if.type.version>2014.05.08.9-Boron</iana.if.type.version>
+		<yang.ext.version>2013.09.07.9-Boron</yang.ext.version>
+		<openflowplugin.version>0.3.0-Boron</openflowplugin.version>
+		<l2switch.version>0.4.0-Boron</l2switch.version>
 		<checkstyle.skip>true</checkstyle.skip>
 		<console.version>3.0.3</console.version>
-		<snmp.version>1.2.0-SNAPSHOT</snmp.version>
-		<didm.version>0.3.0-SNAPSHOT</didm.version>
-		<liblldp.version>0.11.0-SNAPSHOT</liblldp.version>
-		<bgpcep.version>0.6.0-SNAPSHOT</bgpcep.version>
+		<snmp.version>1.2.0-Boron</snmp.version>
+		<didm.version>0.3.0-Boron</didm.version>
+		<liblldp.version>0.11.0-Boron</liblldp.version>
+		<bgpcep.version>0.6.0-Boron</bgpcep.version>
 	</properties>
 	<dependencies>
 		<!-- Testing Dependencies -->
