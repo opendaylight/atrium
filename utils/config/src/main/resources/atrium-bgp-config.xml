@@ -43,31 +43,6 @@
                         <name>global-event-executor</name>
                     </timed-reconnect-executor>
                 </module>
-
-                <module>
-                    <type xmlns:prefix="urn:opendaylight:params:xml:ns:yang:controller:bgp:rib:impl">prefix:bgp-peer-acceptor</type>
-                    <name>bgp-peer-server</name>
-
-                    <!--Default parameters-->
-                    <!--<binding-address>0.0.0.0</binding-address>-->
-
-                    <!--Default binding-port 179-->
-		    <!--  
-		                Modified for Atrium   
-		    -->
-                    <binding-port>2000</binding-port>
-
-                    <accepting-bgp-dispatcher>
-                        <type xmlns:prefix="urn:opendaylight:params:xml:ns:yang:controller:bgp:rib:impl">prefix:bgp-dispatcher</type>
-                        <name>global-bgp-dispatcher</name>
-                    </accepting-bgp-dispatcher>
-                    <accepting-peer-registry>
-                        <type xmlns:prefix="urn:opendaylight:params:xml:ns:yang:controller:bgp:rib:impl">prefix:bgp-peer-registry</type>
-                        <name>global-bgp-peer-registry</name>
-                    </accepting-peer-registry>
-
-                </module>
-
                 <!--
                      A single BGP peer. Note this section is deactivated because a misconfigured peer
                      tends to log rather nasty error messages.

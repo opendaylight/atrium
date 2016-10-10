@@ -26,6 +26,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html INTERNAL
 		<module>api</module>
 		<module>impl</module>
 		<module>atrium-thirdparty-lib</module>
+		<module>atrium-peer-acceptor</module>
 	</modules>
 	<!-- DO NOT install or deploy the repo root pom as it's only needed to initiate 
 		a build -->

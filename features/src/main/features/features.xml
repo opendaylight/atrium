@@ -66,6 +66,7 @@
 		description='OpenDaylight :: bgpservice '>
 		<feature version='${atrium.version}'>atrium-utilservice</feature>
 		<feature version='${bgpcep.version}'>odl-bgpcep-bgp-all</feature>
+		<bundle>mvn:org.opendaylight.atrium/atrium-peer-acceptor/${atrium.version}</bundle>
 		<configfile finalname="etc/opendaylight/karaf/atrium-bgp-config.xml">mvn:org.opendaylight.atrium/atrium-initial-config/${atrium.version}/xml/bgpcepconf
 		</configfile>
 	</feature>
