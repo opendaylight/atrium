@@ -15,6 +15,25 @@
 * Do not modify this file unless it is present under src/main directory
 */
 package org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.routingservice.impl.rev150725;
-public class RoutingserviceImplModuleFactory extends org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.routingservice.impl.rev150725.AbstractRoutingserviceImplModuleFactory {
 
+import org.opendaylight.controller.config.api.DependencyResolver;
+import org.opendaylight.controller.config.api.DynamicMBeanWithInstance;
+import org.opendaylight.controller.config.spi.Module;
+import org.osgi.framework.BundleContext;
+
+public class RoutingserviceImplModuleFactory extends org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.routingservice.impl.rev150725.AbstractRoutingserviceImplModuleFactory {
+    @Override
+    public Module createModule(final String instanceName, final DependencyResolver dependencyResolver, final BundleContext bundleContext) {
+        final RoutingserviceImplModule module = (RoutingserviceImplModule) super.createModule(instanceName, dependencyResolver, bundleContext);
+        module.setBundleContext(bundleContext);
+        return module;
+    }
+
+    @Override
+    public Module createModule(final String instanceName, final DependencyResolver dependencyResolver,
+        final DynamicMBeanWithInstance old, final BundleContext bundleContext) throws Exception {
+        final RoutingserviceImplModule module = (RoutingserviceImplModule)  super.createModule(instanceName, dependencyResolver, old, bundleContext);
+        module.setBundleContext(bundleContext);
+        return module;
+    }
 }

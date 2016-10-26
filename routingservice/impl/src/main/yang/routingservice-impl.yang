@@ -76,16 +76,6 @@ module routingservice-impl {
                     }
                 }
             }
-            
-            container local-rib {
-                uses config:service-ref {
-                    refine type {
-                        mandatory true;
-                        config:required-identity ribapi:rib;
-                    }
-                }
-            }
-            
         }
     }
 }

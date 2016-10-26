@@ -8,24 +8,23 @@
 package org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.routingservice.impl.rev150725;
 
 
+import org.opendaylight.atrium.hostservice.api.HostService;
 import org.opendaylight.atrium.routingservice.config.api.RoutingConfigService;
 import org.opendaylight.atrium.routingservice.impl.RibManager;
+import org.opendaylight.controller.config.api.osgi.WaitingServiceTracker;
 import org.opendaylight.controller.md.sal.binding.api.DataBroker;
-import org.opendaylight.controller.md.sal.binding.api.DataTreeChangeService;
-import org.opendaylight.atrium.hostservice.api.HostService;
+import org.opendaylight.protocol.bgp.rib.RibReference;
+import org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.bgp.rib.rev130925.Route;
+import org.osgi.framework.BundleContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.opendaylight.protocol.bgp.rib.RibReference;
-import org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.bgp.rib.rev130925.bgp.rib.Rib;
-import org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.bgp.rib.rev130925.bgp.rib.RibKey;
-import org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.bgp.rib.rev130925.Route;
-import org.opendaylight.yangtools.yang.binding.KeyedInstanceIdentifier;
 
 public class RoutingserviceImplModule
         extends
         org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.routingservice.impl.rev150725.AbstractRoutingserviceImplModule {
     private static final Logger LOG = LoggerFactory
             .getLogger(RoutingserviceImplModule.class);
+    private BundleContext bundleContext;
 
     public RoutingserviceImplModule(
             org.opendaylight.controller.config.api.ModuleIdentifier identifier,
@@ -51,22 +50,24 @@ public class RoutingserviceImplModule
         LOG.info("Initializing Routingservice");
         RoutingConfigService routingConfigService =  getRoutingconfigDependency();
         HostService hostService = getHostserviceDependency();
-        RibReference ribReference = getLocalRibDependency();
-        KeyedInstanceIdentifier<Rib,RibKey> ribIID = ribReference.getInstanceIdentifier();
         DataBroker broker = getDataBrokerDependency();
-        
-        
+
+        final WaitingServiceTracker<RibReference> ribTracker = WaitingServiceTracker.create(RibReference.class, this.bundleContext, "(ribImpl=atrium-bgp-rib)");
+        final RibReference ribReference = ribTracker.waitForService(WaitingServiceTracker.FIVE_MINUTES);
+
         //Router router = new Router();
         //router.setServices(routingConfigService, bgpService,hostService);
 
-        RibManager<Route> ribManager = new RibManager<Route> (broker,ribReference,hostService,routingConfigService); 
+        RibManager<Route> ribManager = new RibManager<Route> (broker, ribReference, hostService, routingConfigService);
         //ribManager.start();
-        
-        
         
         getBrokerDependency().registerProvider(ribManager);
 
         return ribManager;
+    }
+
+    public void setBundleContext(final BundleContext bundleContext) {
+        this.bundleContext = bundleContext;
     }
 
 }

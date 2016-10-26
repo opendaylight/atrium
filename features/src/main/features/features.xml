@@ -67,8 +67,8 @@
 		<feature version='${atrium.version}'>atrium-utilservice</feature>
 		<feature version='${bgpcep.version}'>odl-bgpcep-bgp-all</feature>
 		<bundle>mvn:org.opendaylight.atrium/atrium-bgp-config/${atrium.version}</bundle>
-		<configfile finalname="etc/opendaylight/karaf/atrium-bgp-config.xml">mvn:org.opendaylight.atrium/atrium-initial-config/${atrium.version}/xml/bgpcepconf
-		</configfile>
+		<configfile finalname="etc/opendaylight/bgp/protocols-atrium-config.xml">mvn:org.opendaylight.atrium/atrium-initial-config/${atrium.version}/xml/bgpcepconf</configfile>
+		<configfile finalname="etc/opendaylight/bgp/network-topology-atrium-config.xml">mvn:org.opendaylight.atrium/atrium-initial-config/${atrium.version}/xml/bgpcep-topology-conf</configfile>
 	</feature>
 	<feature name='atrium-routingconfig' version='${atrium.version}'
 		description='OpenDaylight :: routingconfig'>

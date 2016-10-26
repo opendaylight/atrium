@@ -47,10 +47,6 @@
 						</type>
 						<name>hostservice</name>
 					</hostservice>
-                    <local-rib>
-                        <type xmlns:prefix="urn:opendaylight:params:xml:ns:yang:controller:bgp:rib:cfg">prefix:rib</type>
-                        <name>atrium-bgp-rib</name>
-                    </local-rib>
 				</module>
 			</modules>
 			<services xmlns="urn:opendaylight:params:xml:ns:yang:controller:config">
