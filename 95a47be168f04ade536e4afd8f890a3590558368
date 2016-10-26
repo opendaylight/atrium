@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a65312a_8841270e",
+        "filename": "utils/config/src/main/resources/atrium-bgp-config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 866
+      },
+      "writtenOn": "2016-10-26T15:53:15Z",
+      "side": 0,
+      "message": "Hmm...they shall not use the default instance and topology-id name.",
+      "range": {
+        "startLine": 203,
+        "startChar": 30,
+        "endLine": 203,
+        "endChar": 51
+      },
+      "revId": "95a47be168f04ade536e4afd8f890a3590558368",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a65312a_283c5393",
+        "filename": "utils/config/src/main/resources/atrium-bgp-config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 866
+      },
+      "writtenOn": "2016-10-26T15:53:15Z",
+      "side": 0,
+      "message": "The RIB service is injected to another service:\n\nhttps://git.opendaylight.org/gerrit/gitweb?p\u003datrium.git;a\u003dblob;f\u003droutingservice/impl/src/main/yang/routingservice-impl.yang;h\u003d376c3a5eef41afac6f4a9dc097e27c94da07c8b0;hb\u003drefs/heads/master\n\nand initial configuration:\n\nhttps://git.opendaylight.org/gerrit/gitweb?p\u003datrium.git;a\u003dblob;f\u003droutingservice/impl/src/main/config/default-config.xml;h\u003d6d923dd0dcb7033aee2ed478156f5217471ed946;hb\u003drefs/heads/master\n\nthis needs to be resolved too.",
+      "range": {
+        "startLine": 207,
+        "startChar": 0,
+        "endLine": 213,
+        "endChar": 26
+      },
+      "revId": "95a47be168f04ade536e4afd8f890a3590558368",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}

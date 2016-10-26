@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a65312a_e851bbd9",
+        "filename": "utils/config/src/main/resources/network-topology-atrium-config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 866
+      },
+      "writtenOn": "2016-10-26T15:53:15Z",
+      "side": 1,
+      "message": "move to new line",
+      "range": {
+        "startLine": 1,
+        "startChar": 38,
+        "endLine": 1,
+        "endChar": 42
+      },
+      "revId": "6a7ce4ebcfffdcc0bdaa3728cad1db4410da9e23",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a65312a_a847c31c",
+        "filename": "utils/config/src/main/resources/network-topology-atrium-config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 866
+      },
+      "writtenOn": "2016-10-26T15:53:15Z",
+      "side": 1,
+      "message": "use some more specific topology-id (i.e. atrium-bgp-ipv4-topology)",
+      "range": {
+        "startLine": 10,
+        "startChar": 21,
+        "endLine": 10,
+        "endChar": 50
+      },
+      "revId": "6a7ce4ebcfffdcc0bdaa3728cad1db4410da9e23",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a65312a_c84aff26",
+        "filename": "utils/config/src/main/resources/network-topology-atrium-config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 866
+      },
+      "writtenOn": "2016-10-26T15:53:15Z",
+      "side": 1,
+      "message": "They do not defined IPv6 and Link-state topology in their default config.",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 15
+      },
+      "revId": "6a7ce4ebcfffdcc0bdaa3728cad1db4410da9e23",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a65312a_2863b3b2",
+        "filename": "utils/config/src/main/resources/protocols-atrium-config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 866
+      },
+      "writtenOn": "2016-10-26T15:53:15Z",
+      "side": 1,
+      "message": "duplicated",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 38
+      },
+      "revId": "6a7ce4ebcfffdcc0bdaa3728cad1db4410da9e23",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": false
+    }
+  ]
+}
