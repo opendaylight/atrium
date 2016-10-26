@@ -255,7 +255,14 @@
 			<version>${atrium.version}</version>
 			<type>xml</type>
 			<classifier>bgpcepconf</classifier>
-		</dependency>		
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>atrium-initial-config</artifactId>
+			<version>${atrium.version}</version>
+			<type>xml</type>
+			<classifier>bgpcep-topology-conf</classifier>
+		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>routingservice-impl</artifactId>
