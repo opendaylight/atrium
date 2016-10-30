@@ -9,29 +9,29 @@
 	<parent>
 		<groupId>org.opendaylight.odlparent</groupId>
 		<artifactId>features-parent</artifactId>
-		<version>1.7.1-SNAPSHOT</version>
+		<version>1.7.1-Boron-SR1</version>
 		<relativePath />
 	</parent>
 
 
 	<groupId>org.opendaylight.atrium</groupId>
 	<artifactId>atrium-features</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2-Boron-SR1</version>
 	<name>${project.artifactId}</name>
 	<modelVersion>4.0.0</modelVersion>
 
 	<properties>
-		<mdsal.version>1.4.1-SNAPSHOT</mdsal.version>
-		<restconf.version>1.4.1-SNAPSHOT</restconf.version>
-		<openflowplugin.version>0.3.1-SNAPSHOT</openflowplugin.version>
-		<yangtools.version>1.0.1-SNAPSHOT</yangtools.version>
-		<mdsal.model.version>0.9.1-SNAPSHOT</mdsal.model.version>
-		<l2switch.version>0.4.1-SNAPSHOT</l2switch.version>
-		<atrium.version>0.0.2-SNAPSHOT</atrium.version>
+		<mdsal.version>1.4.1-Boron-SR1</mdsal.version>
+		<restconf.version>1.4.1-Boron-SR1</restconf.version>
+		<openflowplugin.version>0.3.1-Boron-SR1</openflowplugin.version>
+		<yangtools.version>1.0.1-Boron-SR1</yangtools.version>
+		<mdsal.model.version>0.9.1-Boron-SR1</mdsal.model.version>
+		<l2switch.version>0.4.1-Boron-SR1</l2switch.version>
+		<atrium.version>0.0.2-Boron-SR1</atrium.version>
 		<skipTests>true</skipTests>
-		<snmp.version>1.2.1-SNAPSHOT</snmp.version>
-		<didm.version>0.3.1-SNAPSHOT</didm.version>
-		<bgpcep.version>0.6.1-SNAPSHOT</bgpcep.version>
+		<snmp.version>1.2.1-Boron-SR1</snmp.version>
+		<didm.version>0.3.1-Boron-SR1</didm.version>
+		<bgpcep.version>0.6.1-Boron-SR1</bgpcep.version>
 		<jackson.version>2.7.4</jackson.version>
 	</properties>
 

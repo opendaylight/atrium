@@ -8,13 +8,13 @@
 	<parent>
 		<groupId>org.opendaylight.mdsal</groupId>
 		<artifactId>binding-parent</artifactId>
-		<version>0.9.1-SNAPSHOT</version>
+		<version>0.9.1-Boron-SR1</version>
 		<relativePath />
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opendaylight.atrium</groupId>
 	<artifactId>binding-parent</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2-Boron-SR1</version>
 	<packaging>pom</packaging>
 </project>
