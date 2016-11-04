@@ -8,32 +8,32 @@
 	<parent>
 		<groupId>org.opendaylight.controller</groupId>
 		<artifactId>config-parent</artifactId>
-		<version>0.5.1-SNAPSHOT</version>
+		<version>0.5.2-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opendaylight.atrium</groupId>
 	<artifactId>config-parent</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<atrium.version>0.0.2-SNAPSHOT</atrium.version>
-		<ietf.topology.version>2013.10.21.9.1-SNAPSHOT</ietf.topology.version>
-		<ietf.inet.types.version>1.1.1-SNAPSHOT</ietf.inet.types.version>
-		<ietf.yang.types.version>2013.07.15.9.1-SNAPSHOT</ietf.yang.types.version>
-		<ietf.interfaces.version>2014.05.08.9.1-SNAPSHOT</ietf.interfaces.version>
-		<iana.if.type.version>2014.05.08.9.1-SNAPSHOT</iana.if.type.version>
-		<yang.ext.version>2013.09.07.9.1-SNAPSHOT</yang.ext.version>
-		<openflowplugin.version>0.3.1-SNAPSHOT</openflowplugin.version>
-		<l2switch.version>0.4.1-SNAPSHOT</l2switch.version>
+		<atrium.version>0.0.3-SNAPSHOT</atrium.version>
+		<ietf.topology.version>2013.10.21.9.2-SNAPSHOT</ietf.topology.version>
+		<ietf.inet.types.version>1.1.2-SNAPSHOT</ietf.inet.types.version>
+		<ietf.yang.types.version>2013.07.15.9.2-SNAPSHOT</ietf.yang.types.version>
+		<ietf.interfaces.version>2014.05.08.9.2-SNAPSHOT</ietf.interfaces.version>
+		<iana.if.type.version>2014.05.08.9.2-SNAPSHOT</iana.if.type.version>
+		<yang.ext.version>2013.09.07.9.2-SNAPSHOT</yang.ext.version>
+		<openflowplugin.version>0.3.2-SNAPSHOT</openflowplugin.version>
+		<l2switch.version>0.4.2-SNAPSHOT</l2switch.version>
 		<checkstyle.skip>true</checkstyle.skip>
 		<console.version>3.0.3</console.version>
-		<snmp.version>1.2.1-SNAPSHOT</snmp.version>
-		<didm.version>0.3.1-SNAPSHOT</didm.version>
-		<liblldp.version>0.11.1-SNAPSHOT</liblldp.version>
-		<bgpcep.version>0.6.1-SNAPSHOT</bgpcep.version>
+		<snmp.version>1.2.2-SNAPSHOT</snmp.version>
+		<didm.version>0.3.2-SNAPSHOT</didm.version>
+		<liblldp.version>0.11.2-SNAPSHOT</liblldp.version>
+		<bgpcep.version>0.6.2-SNAPSHOT</bgpcep.version>
 	</properties>
 	<dependencies>
 		<!-- Testing Dependencies -->

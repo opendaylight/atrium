@@ -126,7 +126,7 @@
 		<configfile finalname="etc/opendaylight/atriumcli.xml">mvn:org.opendaylight.atrium/atrium-cli/${atrium.version}/xml/config
 		</configfile>
 	</feature>
-	<feature name="odl-atrium-all" version="0.0.2-SNAPSHOT"
+	<feature name="odl-atrium-all" version="0.0.3-SNAPSHOT"
 		description="OpenDaylight :: bgprouter ">
 		<feature version='${mdsal.version}'>odl-mdsal-broker</feature>
 		<feature version='${mdsal.model.version}'>odl-mdsal-models</feature>
