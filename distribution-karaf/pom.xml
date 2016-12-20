@@ -8,16 +8,16 @@
 	<parent>
 		<groupId>org.opendaylight.controller</groupId>
 		<artifactId>karaf-parent</artifactId>
-		<version>1.7.2-SNAPSHOT</version>
+		<version>1.7.3-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opendaylight.atrium</groupId>
 	<artifactId>atrium-karaf</artifactId>
 	<name>${project.artifactId}</name>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<properties>
-               <didm.version>0.3.2-SNAPSHOT</didm.version>
+               <didm.version>0.3.3-SNAPSHOT</didm.version>
         </properties>
 
         <prerequisites>
