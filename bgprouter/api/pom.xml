@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.opendaylight.atrium</groupId>
 		<artifactId>config-parent</artifactId>
-		<version>0.0.4-SNAPSHOT</version>
+		<version>0.0.4-Boron-SR3</version>
 		<relativePath>../../commons/config-parent</relativePath>
 	</parent>
 
