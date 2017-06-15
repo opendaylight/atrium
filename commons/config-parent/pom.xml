@@ -8,32 +8,32 @@
 	<parent>
 		<groupId>org.opendaylight.controller</groupId>
 		<artifactId>config-parent</artifactId>
-		<version>0.5.4-SNAPSHOT</version>
+		<version>0.5.4-Boron-SR4</version>
 		<relativePath />
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opendaylight.atrium</groupId>
 	<artifactId>config-parent</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.5-Boron-SR4</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<atrium.version>0.0.5-SNAPSHOT</atrium.version>
-		<ietf.topology.version>2013.10.21.9.4-SNAPSHOT</ietf.topology.version>
-		<ietf.inet.types.version>1.1.4-SNAPSHOT</ietf.inet.types.version>
-		<ietf.yang.types.version>2013.07.15.9.4-SNAPSHOT</ietf.yang.types.version>
-		<ietf.interfaces.version>2014.05.08.9.4-SNAPSHOT</ietf.interfaces.version>
-		<iana.if.type.version>2014.05.08.9.4-SNAPSHOT</iana.if.type.version>
-		<yang.ext.version>2013.09.07.9.4-SNAPSHOT</yang.ext.version>
-		<openflowplugin.version>0.3.4-SNAPSHOT</openflowplugin.version>
-		<l2switch.version>0.4.4-SNAPSHOT</l2switch.version>
+		<atrium.version>0.0.5-Boron-SR4</atrium.version>
+		<ietf.topology.version>2013.10.21.9.4-Boron-SR4</ietf.topology.version>
+		<ietf.inet.types.version>1.1.4-Boron-SR4</ietf.inet.types.version>
+		<ietf.yang.types.version>2013.07.15.9.4-Boron-SR4</ietf.yang.types.version>
+		<ietf.interfaces.version>2014.05.08.9.4-Boron-SR4</ietf.interfaces.version>
+		<iana.if.type.version>2014.05.08.9.4-Boron-SR4</iana.if.type.version>
+		<yang.ext.version>2013.09.07.9.4-Boron-SR4</yang.ext.version>
+		<openflowplugin.version>0.3.4-Boron-SR4</openflowplugin.version>
+		<l2switch.version>0.4.4-Boron-SR4</l2switch.version>
 		<checkstyle.skip>true</checkstyle.skip>
 		<console.version>3.0.3</console.version>
-		<snmp.version>1.2.4-SNAPSHOT</snmp.version>
-		<didm.version>0.3.4-SNAPSHOT</didm.version>
-		<liblldp.version>0.11.4-SNAPSHOT</liblldp.version>
-		<bgpcep.version>0.6.4-SNAPSHOT</bgpcep.version>
+		<snmp.version>1.2.4-Boron-SR4</snmp.version>
+		<didm.version>0.3.4-Boron-SR4</didm.version>
+		<liblldp.version>0.11.4-Boron-SR4</liblldp.version>
+		<bgpcep.version>0.6.4-Boron-SR4</bgpcep.version>
 	</properties>
 	<dependencies>
 		<!-- Testing Dependencies -->
