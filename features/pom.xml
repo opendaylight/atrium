@@ -9,29 +9,29 @@
 	<parent>
 		<groupId>org.opendaylight.odlparent</groupId>
 		<artifactId>features-parent</artifactId>
-		<version>1.7.4-SNAPSHOT</version>
+		<version>1.7.5-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
 
 	<groupId>org.opendaylight.atrium</groupId>
 	<artifactId>atrium-features</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<name>${project.artifactId}</name>
 	<modelVersion>4.0.0</modelVersion>
 
 	<properties>
-		<mdsal.version>1.4.4-SNAPSHOT</mdsal.version>
-		<restconf.version>1.4.4-SNAPSHOT</restconf.version>
-		<openflowplugin.version>0.3.4-SNAPSHOT</openflowplugin.version>
-		<yangtools.version>1.0.4-SNAPSHOT</yangtools.version>
-		<mdsal.model.version>0.9.4-SNAPSHOT</mdsal.model.version>
-		<l2switch.version>0.4.4-SNAPSHOT</l2switch.version>
-		<atrium.version>0.0.5-SNAPSHOT</atrium.version>
+		<mdsal.version>1.4.5-SNAPSHOT</mdsal.version>
+		<restconf.version>1.4.5-SNAPSHOT</restconf.version>
+		<openflowplugin.version>0.3.5-SNAPSHOT</openflowplugin.version>
+		<yangtools.version>1.0.5-SNAPSHOT</yangtools.version>
+		<mdsal.model.version>0.9.5-SNAPSHOT</mdsal.model.version>
+		<l2switch.version>0.4.5-SNAPSHOT</l2switch.version>
+		<atrium.version>0.0.6-SNAPSHOT</atrium.version>
 		<skipTests>true</skipTests>
-		<snmp.version>1.2.4-SNAPSHOT</snmp.version>
-		<didm.version>0.3.4-SNAPSHOT</didm.version>
-		<bgpcep.version>0.6.4-SNAPSHOT</bgpcep.version>
+		<snmp.version>1.2.5-SNAPSHOT</snmp.version>
+		<didm.version>0.3.5-SNAPSHOT</didm.version>
+		<bgpcep.version>0.6.5-SNAPSHOT</bgpcep.version>
 		<jackson.version>2.7.4</jackson.version>
 	</properties>
 
