@@ -24,7 +24,7 @@
 		<mdsal.version>1.5.0-SNAPSHOT</mdsal.version>
 		<restconf.version>1.5.0-SNAPSHOT</restconf.version>
 		<openflowplugin.version>0.4.0-SNAPSHOT</openflowplugin.version>
-		<yangtools.version>1.1.0-SNAPSHOT</yangtools.version>
+		<yangtools.version>1.2.0</yangtools.version>
 		<mdsal.model.version>0.10.0-SNAPSHOT</mdsal.model.version>
 		<l2switch.version>0.5.0-SNAPSHOT</l2switch.version>
 		<atrium.version>0.1.0-SNAPSHOT</atrium.version>
